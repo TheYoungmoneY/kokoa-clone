@@ -1,127 +1,45 @@
 <!DOCTYPE html>
 <html lang="kr">
   <head>
-    <title>아무거나 - 뭐 먹을까?</title>
-    <meta name="description" content="음식점의 예상 평점을 알려드립니다" />
-    <meta charset="utf-8" />
-    <link
-      rel="shortcut icon"
-      sizes="16x16 32x32 64x64"
-      href="img/아무거나.png"
-    />
-    <!-- <link rel="stylesheet" href="styles.css" /> -->
-    <style>
-      :root {
-        --main-color: #fcce00;
-      }
-      * {
-        border: 2px solid black;
-      }
-      html {
-        /* background-color: green; */
-      }
-      body {
-        height: 1000vh;
-        padding: 10px;
-        margin: 20px 15px 100px 4px;
-      }
-      main {
-        display: flex;
-      }
-      div {
-        width: 160px;
-        border: 0.8px;
-        border-style: solid;
-        border-color: #000000;
-      }
-      dic:first-child {
-        background-color: red;
-      }
-      h1 {
-        color: black;
-        font-size: 40px;
-      }
-      p {
-        color: red;
-        font-size: 12px;
-      }
-      span {
-        border-style: dashed;
-      }
-      .btn {
-        font-size: 20px;
-      }
-      .special {
-        color: tomato;
-        padding: 5px 10px;
-        background-color: white;
-        border-radius: 5px;
-      }
-      div p {
-        color: var(--main-color);
-      }
-      a {
-        color: black;
-        background-color: yellow;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 3px 5px;
-        border-radius: 5px;
-        transition: all 1s ease-in-out;
-      }
-      a:hover {
-        color: yellow;
-        background-color: black;
-      }
-      img {
-        border-radius: 50%;
-      }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa Talk</title>
   </head>
   <body>
-    <header>
-      <h1>ㅇㅁㄱㄴ</h1>
-      <a href="#">아무거나</a>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+          <i class="fas fa-wifi"></i>
+        </svg>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>89%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcome-header__text">If you have a Kokoa Account, <br> log in with your email or phone number.</p>
     </header>
-    <main>
-      <div id="first">
-        <img
-          src="https://s3-ap-northeast-1.amazonaws.com/dcreviewsresized/20200327041705_photo1_6b26902731e7.jpg"
-          alt=""
-          width="160"
-          height="160"
-        />
-        <h3>공덕역 부산갈매기</h3>
-        <span>HELLO</span>
-        <p>★★★★★</p>
-      </div>
-      <div id="second">
-        <img
-          src="https://mp-seoul-image-production-s3.mangoplate.com/313740_1593326080869597.jpg?fit=around|512:512&crop=512:512;*,*&output-format=jpg&output-quality=80"
-          alt=""
-          width="160"
-          height="160"
-        />
-        <h3>클래식 햄버거</h3>
-        <p>★★★★✩</p>
-      </div>
-      <div id="third">
-        <img
-          src="https://mblogthumb-phinf.pstatic.net/MjAxOTAxMjNfMTgz/MDAxNTQ4MjAxODgyMzk4.1ag0fpFd7-HfFKJmbvwbPWZ1Qf2kqWZX6gzCb15BBe4g.wOffrA_JVB40L724hXYC0Lkm5AUgisOjNG-P4jObRMEg.JPEG.mandoowoo/output_1031636522.jpg?type=w800"
-          alt=""
-          width="160"
-          height="160"
-        />
-        <h3>구이마당</h3>
-        <p>★★★★✩</p>
-        <span>hello</span>
-        <span class="special">hello</span>
-        <span class="special btn">hello</span>
-        <span class="special btn">hello</span>
-        <span class="special">hello</span>
-        <span>hello</span>
-      </div>
-    </main>
-    <footer>&copy 이성재, 지영미</footer>
+    <form action="friends.html" method="GET" class="login-form">
+      <input name="username" required type="text" placeholder="Email or phone number" />
+      <input name="password" required type="password" placeholder="password">
+      <input type="submit" value="Log in">
+      <!-- <input type="submit" value="Sign Up"> -->
+      <a href="#"> Find Kakao Account or Password</a>
+    </form>
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
+  </div>
+    <!-- Code Kit 설치 -->
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="annonymous"
+    ></script>
   </body>
 </html>
