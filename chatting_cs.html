@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatting1 - Kokoa Talk</title>
+  </head>
+  <body class="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+          <i class="fas fa-wifi"></i>
+        </svg>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>89%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <a href="chat.html">
+                <i class="fas fa-angle-left fa-2x"></i>
+            </a>
+        </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header__title">김철수</h1>
+        </div>
+        <div class="alt-header__column">
+            <span><i class="fas fa-search fa-2x"></i></span>
+            <span><i class="fas fa-bars fa-2x"></i></span>
+        </div>
+    </header>
+
+
+    <main class="main-screen main-chat">
+      <div class = "chat__timestamp">
+        Tuesday, June 30, 2020
+      </div>
+      <div class="message-row message-row--sent">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">철수야~~ 노올자</span>
+            <span class="message__time">20:00</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--inbox">
+        <img src="https://mblogthumb-phinf.pstatic.net/20140902_65/lego15992_1409644610503wNcft_JPEG/3.jpg?type=w2">
+        <div class="message-row__content">
+          <span class="message__author">김철수</span>
+          <div class="message__info">
+            <span class="message__bubble">영어학원 갈 시간이야</span>
+            <span class="message__time">20:03</span>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a Message...">
+        <i class="far fa-smile fa-lg"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+
+      </div>
+    </form>
+    <div id="no-mobile">
+      <span>스크린을 줄여주쎄용~😭</span>
+  </div>
+    <!-- Code Kit 설치 -->
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="annonymous"
+    ></script>
+  </body>
+</html>

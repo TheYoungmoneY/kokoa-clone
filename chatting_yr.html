@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatting1 - Kokoa Talk</title>
+  </head>
+  <body class="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+          <i class="fas fa-wifi"></i>
+        </svg>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>89%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <a href="chat.html">
+                <i class="fas fa-angle-left fa-2x"></i>
+            </a>
+        </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header__title">한유리</h1>
+        </div>
+        <div class="alt-header__column">
+            <span><i class="fas fa-search fa-2x"></i></span>
+            <span><i class="fas fa-bars fa-2x"></i></span>
+        </div>
+    </header>
+
+
+    <main class="main-screen main-chat">
+      <div class = "chat__timestamp">
+        Tuesday, June 30, 2020
+      </div>
+
+      <div class="message-row message-row--inbox">
+        <img src="https://3.bp.blogspot.com/-3ZNWmm1ESPE/WifDl1MbazI/AAAAAAACJdc/fHKagRVmi0ABG26zGbnpxCD9JF3Uf2cWgCEwYBhgL/s640/image.jpg">
+        <div class="message-row__content">
+          <span class="message__author">한유리</span>
+          <div class="message__info">
+            <span class="message__bubble">신짱구</span>
+            <span class="message__time">15:03</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--sent">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">응</span>
+            <span class="message__time">16:08</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row--inbox">
+        <img src="https://3.bp.blogspot.com/-3ZNWmm1ESPE/WifDl1MbazI/AAAAAAACJdc/fHKagRVmi0ABG26zGbnpxCD9JF3Uf2cWgCEwYBhgL/s640/image.jpg">
+        <div class="message-row__content">
+          <span class="message__author">한유리</span>
+          <div class="message-row__multi">
+            <div class="message__info">
+              <span class="message__bubble">짱구 너!!!</span>
+            </div>
+            <div class="message__info">
+              <span class="message__bubble">왜 이렇게 답이 늦어!!!</span>
+            </div>
+            <div class="message__info">
+              <span class="message__bubble">오늘 소꿉놀이 하려고 했는데 못하게 됐잖아!</span>
+              <span class="message__time">19:01</span>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="message-row message-row--inbox">
+        <img src="https://3.bp.blogspot.com/-3ZNWmm1ESPE/WifDl1MbazI/AAAAAAACJdc/fHKagRVmi0ABG26zGbnpxCD9JF3Uf2cWgCEwYBhgL/s640/image.jpg">
+        <div class="message-row__content">
+          <span class="message__author">한유리</span>
+          <div class="message-row__multi">
+            <div class="message__info">
+              <span class="message__bubble">기왕 이렇게 된 것 소꿉놀이 대본을 보내줄게</span>
+            </div>
+            <div class="message__info">
+              <span class="message__bubble">내일까지 다 외워와</span>
+            </div>
+            <div class="message__info">
+              <span class="message__bubble">이번엔 짱구 니가 말썽꾸러기 아들 역할이야</span>
+            </div>
+            <div class="message__info">
+              <span class="message__bubble">나는 말썽꾸러기 아들을 홀로 키우는 비련한 여주인공이지</span>
+              <span class="message__time">19:02</span>
+            </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row--inbox">
+        <img src="https://3.bp.blogspot.com/-3ZNWmm1ESPE/WifDl1MbazI/AAAAAAACJdc/fHKagRVmi0ABG26zGbnpxCD9JF3Uf2cWgCEwYBhgL/s640/image.jpg">
+        <div class="message-row__content">
+          <span class="message__author">한유리</span>
+          <div class="message-row__multi">
+            <div class="message__info">
+              <span class="message__bubble">훈이, 맹구, 철수도 다 데려와</span>
+            </div>
+            <div class="message__info">
+              <span class="message__bubble">내일 늦으면 정말 죽어!!!!</span>
+            </div>
+            <div class="message__info">
+              <span class="message__bubble">내일 꼭 대본 외워와!!</span>
+              <span class="message__time">19:03</span>
+            </div>
+        </div>
+        </div>
+      </div>
+
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a Message...">
+        <i class="far fa-smile fa-lg"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+
+      </div>
+    </form>
+    <div id="no-mobile">
+      <span>스크린을 줄여주쎄용~😭</span>
+  </div>
+    <!-- Code Kit 설치 -->
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="annonymous"
+    ></script>
+  </body>
+</html>

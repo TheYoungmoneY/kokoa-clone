@@ -6,6 +6,7 @@
   font-size: 18px;
   margin-bottom: 15px;
   margin-top: -15px;
+  font-family: "gaegu";
 }
 #friends-display-link i {
   color: var(--grey);
@@ -38,7 +39,7 @@
 }
 
 #splash-screen {
-  background-color: var(--yellow);
+  background-color: var(--green);
   position: absolute;
   top: 0;
   width: 100vw;
@@ -49,10 +50,90 @@
   font-size: 120px;
   animation: hideSplashScreen 0.5s ease-in-out forwards;
   animation-delay: 0.5s;
+  color: white;
 }
 #no-mobile {
   position: absolute;
   z-index: 99;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  /* background-image: url("../../img/짱구.jpeg"); */
+  background-image: url("https://i.pinimg.com/564x/28/8a/01/288a011a5e000e9e6b927300f4dd166e.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "gaegu";
+  font-weight: 900;
+  font-size: 40px;
+}
+/**
+ * ----------------------------------------
+ * animation jello-horizontal
+ * ----------------------------------------
+ */
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+#no-mobile span {
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 1.5s both infinite;
+  color: black;
 }
