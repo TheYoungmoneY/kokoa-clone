@@ -6,6 +6,7 @@
   box-sizing: border-box;
   position: fixed;
   top: 0;
+  font-family: "gaegu";
 }
 .status-bar__column {
   width: 33%;

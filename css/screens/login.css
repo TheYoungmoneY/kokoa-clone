@@ -13,6 +13,7 @@
 .welcome-header__text {
   opacity: 0.6;
   width: 60%;
+  font-family: "gaegu";
 }
 .login-form {
   display: flex;
@@ -34,11 +35,11 @@
   font-weight: 100;
 }
 .login-form input:focus {
-  border-color: var(--yellow);
+  border-color: var(--green);
   border-width: 2px;
 }
 .login-form input[type="submit"] {
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: var(--green);
   cursor: pointer;
   font-size: 16px;
   padding: 20px 0px;
@@ -51,4 +52,5 @@
   text-decoration: none;
   color: var(--grey);
   font-size: 15px;
+  font-family: "gaegu";
 }
